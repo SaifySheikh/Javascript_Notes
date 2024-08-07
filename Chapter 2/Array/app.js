@@ -91,10 +91,19 @@ allFruits.forEach(fruit => console.log(fruit));
 // Pineapple
 // Strawberry
 
+// console.clear();
+
 // 15. map()
 // Creates a new array with the results of calling a provided function on every element in the calling array.
 let fruitLengths = allFruits.map(fruit => fruit.length);
 console.log(fruitLengths); // [6, 6, 4, 5, 9, 10]
+
+let ans=fruitLengths.map((x)=>{
+    return x%2;
+});
+
+console.log("Here")
+console.log(ans)
 
 // 16. filter()
 // Creates a new array with all elements that pass the test implemented by the provided function.
